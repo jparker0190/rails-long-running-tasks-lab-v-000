@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
-  resources :songs, only:[:index]
-  post 'songs/upload', to: 'songs#upload'
+  resources :artists, :songs
+  post 'songs/upload', to: 'songs#uplaod'
 end
